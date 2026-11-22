@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: image-upload-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    # For persistent uploads on Render, attach a persistent disk and set:
+    # UPLOAD_DIR: /var/data/uploads
+    # Then mount the disk at /var/data.

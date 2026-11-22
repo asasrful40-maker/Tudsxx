@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+# Uploaded files are runtime data; do not commit user uploads.
+uploads/*
+!uploads/.gitkeep
